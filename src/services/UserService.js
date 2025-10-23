@@ -11,7 +11,7 @@ const createUser = (newUser) => {
             })
             if(checkUser !== null){
                 resolve({
-                    status: 'OK',
+                    status: 'ERR',
                     message: 'Email đã được tạo'
                 })
             }
@@ -66,7 +66,7 @@ const loginUser = (userLogin) => {
             })
             resolve({
                     status: 'OK',
-                    message: 'SUCCESS',
+                    message: 'SUCCESS', 
                     access_token,
                     refresh_token    
             })
